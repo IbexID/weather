@@ -1,7 +1,5 @@
 .weather {
     width: 21vw;
-    height: 50vh;
-    min-height: 400px;
     background: linear-gradient(rgb(55, 122, 209), rgb(56, 40, 197));
     border-radius: 16px;
     cursor: pointer;
@@ -11,6 +9,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        justify-content: space-between;
         padding: 20px 15px;
     }
 
@@ -30,11 +29,13 @@
         color: rgb(230, 230, 230);
         padding-right: 1rem;
         padding-left: 1rem;
+        white-space: nowrap;
     }
     &__cond{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-right: 1rem;
         color: rgb(230, 230, 230);
+        text-align: right;
     }
     &__metrics{
         display: flex;

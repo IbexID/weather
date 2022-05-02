@@ -7,10 +7,11 @@ const CityHeader = ({city, setcity}) =>{
     return (
         <div id="field" className={cl.weather__city} onClick={(e) => {
             if(e.currentTarget===cityField ){
+                cityField.style.color = 'transparent'
                 citySearch.classList.remove('hidden')}
             }}>
             {city}
-            <input id='search'  onChange={(e) => {setcity(e.target.value); }}  className={cl.weather__search + ' hidden'} defaultValue={city}></input>
+            <input id='search' onFocus={(e)=>e.target.setSelectionRange(e.target.value.length,e.target.value.length)} onChange={(e) => {setcity(e.target.value); }}  className={cl.weather__search + ' hidden'} defaultValue={city}></input>
             </div>
     )
 }

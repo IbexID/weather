@@ -2,18 +2,26 @@
     font-size: 2rem;
     padding-left: 1rem;
     color: rgb(230, 230, 230);
+    
 }
 .weather__search{
     width: 12rem;
     font-size: 2rem;
     color: rgb(230, 230, 230);
-    position: absolute;
     background-color: transparent;
+    position: absolute;
     top: 24px;
-    padding: 5px;
     left: 24px;
+    padding: 5px;
     height: 30px;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 2px solid rgba(230, 230, 230, 0.7);
     outline-color: transparent;
+    appearance: initial;
+    &:active,
+    &:focus{
+    background-color: transparent;
+    border: 2px solid rgba(230, 230, 230, 1);
+    outline-color: transparent;
+    }
 }
